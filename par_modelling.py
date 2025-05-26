@@ -1,11 +1,11 @@
-from sdv.timeseries import PAR
+from sdv.sequential import PARSynthesizer
 import pandas as pd
-from model_pprocessing import visualize_one
+from model_preprocessing import visualize_one
 
 
 def train_par(cell, weeks, epochs, sequence_index='datetime', segment_size=None):
     train_data = pd.read_csv(f'raw_data/{cell}/{cell}_wk{weeks}.csv', parse_dates=['datetime'])
-    model = PAR(sequence_index=sequence_index, epochs=epochs, verbose=True, segment_size=segment_size)
+    model = PARSynthesizer(sequence_index=sequence_index, epochs=epochs, verbose=True, segment_size=segment_size)
     model.fit(train_data)
     model.save(f'{cell}_{weeks}.pkl')
     return model
