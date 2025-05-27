@@ -68,9 +68,9 @@ if __name__ == '__main__':
               'max_depth': 12,
               'min_samples_split': 32,
               'learning_rate': 0.05,
-              'loss': 'ls',
+              'loss': 'squared_error',
               }
     res = run_imputation_utility(miss_rates, models, 5060, params)
     result_file = pd.DataFrame(res, index=['DG', 'tgan', 'par', 'missing', 'interpolated']).T
-    result_file.to_csv('results/imputation/imputation_5060.csv')
+    result_file.to_csv('results/test/imputation/imputation_5060.csv')
     print(-1)
