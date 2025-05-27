@@ -8,18 +8,12 @@ To achieve zero touch automation in next generation wireless networks through ar
 
 ## Table of Contents
 
-- [Introduction](#introduction)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Experiments](#experiments)
-- [Results](#results)
 - [Citation](#citation)
 - [License](#license)
 
-## Introduction
-
-[Provide an overview of the paper, its goals, and the significance of the research.]
 
 ## Requirements
 
