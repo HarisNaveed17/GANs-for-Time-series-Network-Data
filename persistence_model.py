@@ -26,7 +26,7 @@ pred_y = list()
 for i in test_X:
     pred_y.append(persistence_model(i))
 mae = mean_absolute_percentage_error(test_y, pred_y)
-print(f'Mean absolute error on persistence model is: {mae}')
+print(f'Mean absolute percentage error on persistence model is: {mae}')
 
 plt.plot(test_y, label='True values')
 plt.plot(pred_y, label='Predicted values (previous timestep values)')
